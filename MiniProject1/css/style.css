@@ -1,0 +1,122 @@
+/* 
+
+write your code here
+
+*/
+
+section .tm-content-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-item img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:1150px){
+    .flex-item img{
+        width:300px;
+        height:200px;
+        margin-top: 55%;
+    }
+}
+@media print{
+    .flex-item img{
+        width:100%;
+        height:35%;
+        margin-top: 45%;
+    }
+}
+
+.tm-team-description-container{
+    min-height: 80vh;
+    padding-top: 15%;
+    
+}
+.tm-team-description-container p{
+    margin: 5%;
+    margin-left: 0;
+    margin-right: 0;
+    text-indent: 10%;
+    width: 89%;
+}
+p::first-letter {
+    font-size: 30px;
+    color: #87CEFA;
+    
+}
+.tm-team-description-container .tm-section-title{
+    font-weight: 200;
+    font-size: 35px;
+    color: blue;
+    
+}
+.tm-banner-inner{
+    padding:5%;
+}
+
+.gallery-container .box-bg:hover{
+background-color: #87CEFA;
+}
+.gallery-container .box-bg h2:hover{
+    color: white;
+    font-weight: bold;
+}
+.tm-main-nav{
+
+box-shadow: -2px 1px 14px 12px rgba(218,225,227,1);
+
+}
+.tm-content-header{
+   
+box-shadow: -2px 1px 14px 12px rgba(218,225,227,1);
+
+}
+.tm-content-box{
+
+box-shadow: -2px 1px 14px 12px rgb(222, 220, 220);
+
+}
+
+h2 + p:first-of-type{
+    font-style: italic;
+}
+
+.carousel-inner .tm-section-title{
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+.tm-sidebar nav ul li :hover{
+background-color: grey;
+}
+li a.text::after{
+    content: "New";
+    vertical-align: super;
+    color: red;
+    font-weight: bold;
+    font-size: 70%;
+}
+ol li>a:visited{
+    text-decoration: underline;
+}
+.tm-content-box .gallery-container .box-work:nth-child(even){
+    background-color: #e1eef5;
+}
+.tm-content-box .boxes{
+margin: 2%;
+}
+.tm-content-box .gallery-container .box-work{
+    padding: 5px;
+}
+
+.tm-content-box button{
+    float: right;
+    background-color: white;
+    color: #87CEFA;
+    border: #87CEFA 2px solid;
+}
+.mandatory-field::after{
+    content: "*";
+    color: red;
+
+}
